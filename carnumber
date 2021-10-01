@@ -1,0 +1,14 @@
+flog=0
+for i in range(0,10):
+  if flog:
+    break
+  for j in range(10):
+    if flog:
+      break
+    if i !=j:
+        k=1000*i+100*i+10*j+j
+        for temp in range(31,100):
+          if temp*temp==k:
+            print("车牌号为:",k)
+            flog=1
+            break
